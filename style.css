@@ -505,6 +505,7 @@ iframe {
 	display: grid;
 	justify-items: start;
 	align-items: center;
+	padding: 0 15px 0 0;
 }
 .con__footer {
 	font-size: 16px;
@@ -613,13 +614,20 @@ form button {
 	border-radius: 5px;
 }
 
+.form {
+	text-align: right;
+}
+
 .close {
-	margin: 10px 0 0 360px;
+	margin: 10px 15px 0 0;
 	cursor: pointer;
 	border: 1px solid #ccc;
 	padding: 2px;
 	opacity: .5;
 	background: #ccc;
+	text-align: right;
+	
+
 }
 
 .close:hover {
@@ -885,7 +893,7 @@ form button {
 	}
 
 	.footer__logo {
-		/*display: none;*/
+		display: none;
 		align-self: start;
 		padding-left: 65px;
 		width: 100%;
@@ -894,14 +902,15 @@ form button {
 	.footer__nav {
 		padding-left: 45px;
 	}
-/*	.footer__items {
+
+	.footer__items {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-items: start;
-	}*/
+	}
 }
 
-@media screen and (orientation:landscape) and (max-device-width: 900px) {
+/*@media screen and (orientation:landscape) and (max-device-width: 900px) {
     html{
         -webkit-transform: rotate(-90deg);
            -moz-transform: rotate(-90deg);
@@ -913,9 +922,9 @@ form button {
             -ms-transform-origin: left top;
              -o-transform-origin: left top;
                 transform-origin: left top;
-        width: 320px; /*Разрешение экрана iPhone*/
+        width: 320px; Разрешение экрана iPhone
         position: absolute;
         top: 100%;
             left: 0
-    }
+    }*/
 }
