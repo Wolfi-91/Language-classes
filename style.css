@@ -27,6 +27,7 @@ button {
 header {
 	height: 100vh;
 	padding-bottom: 100px;
+	margin-bottom: 100px;
 	background: url(css/assets/image/01.jpg) no-repeat center top / cover;
 }
 .header__top {
@@ -198,7 +199,10 @@ nav {
 	align-items: center;
 	justify-items: center;
 }
-
+.column img {
+	width: 92px;
+	height: 92px;
+}
 
 
 .tongue {
@@ -284,6 +288,8 @@ p.training__text {
 .team__item img {
 	margin-bottom: 20px;
 	max-width: 100%;
+	height: 348px;
+	width: 348px;
 }
 .team__item {
 	padding: 10px;
@@ -370,7 +376,7 @@ p.training__text {
 .photo_student {
 	
 	grid-row: 1 / 4;
-	border: 1px;
+	border: 1px solid #fff;
 	height: 65px;
 	width: 65px;
 	border-radius: 50%;
