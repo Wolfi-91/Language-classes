@@ -14,7 +14,6 @@ a {
 	text-decoration: none;
 }
 
-
 button {
 	border: none;
 }
@@ -29,8 +28,11 @@ header {
 	height: 100vh;
 	padding-bottom: 100px;
 	margin-bottom: 100px;
-	background: url(css/assets/image/01.jpg) no-repeat center top / cover;
+	background: url(css/assets/image/013.jpg) no-repeat center top / cover;
 }
+
+
+
 .header__top {
 	width: 100%;
 	
@@ -50,7 +52,9 @@ nav {
 .topnav a:nth-child(4) {
 	margin-right: 235px;
 }
-
+.topnav__col {
+	display: flex;
+}
 .topnav a {
 	color: #fff;
 	text-align: center;
@@ -59,8 +63,15 @@ nav {
 	font-size: 16px;
 	font-weight: 400;
 }
-
-.topnav a:hover {
+.topnav__item a {
+	transition-duration: .5s;
+}
+.topnav__item a:hover {
+	display: inline-block;
+	transition: 1s;
+	transform: rotate(360deg);
+}
+.first__topnav a:hover {
 	border-bottom: 1px solid #fff;
 	opacity: .6;
 }
@@ -69,8 +80,9 @@ nav {
 }
 
 .header__title {
-	color: #fff;
+	color: rgb(236, 228, 228);
 	padding-top: 85px;
+	
 }
 
 
@@ -79,7 +91,7 @@ nav {
 	font-weight: 700px;
 	line-height: 67px;
 	margin-bottom: 25px;
-	
+	text-shadow: 4px 4px rgba(78, 77, 77, 0.801);
 }
 
 .header__title p {
@@ -87,6 +99,7 @@ nav {
 	font-weight: 400;
 	line-height: 30px;
 	margin-bottom: 85px;
+	text-shadow: 2px 2px rgba(78, 77, 77, 0.801);
 }
 
 .header__btn {
@@ -95,18 +108,21 @@ nav {
 	line-height: 25px;
 	padding: 15px 20px;
 	background: #fff;
-	border: 1px solid #fff;
 	border-radius: 50px;
 	cursor: pointer;
+	box-shadow: 0 5px 0 rgb(75, 72, 72);
+	transition-duration: .6s;
 }
 
-.header__btn a {
+.header__btn a { 
 	color: #222;
 }
 .header__btn:hover {
 	background: #E8E8E8;
-	border: 1px solid #E8E8E8;
-	opacity: .9;
+	box-shadow: 0 2px 0 rgb(199, 199, 199);
+	transform: translate(0px, 3px);
+	/* border: 1px solid #E8E8E8; */
+	/* opacity: .9; */
 }
 
 
@@ -702,6 +718,11 @@ form button {
 	.mob {
 		padding: 50px 10px;
 	}
+	.topnav__col {
+		display: flex;
+		flex-direction: column;
+	}
+
 
 	.topnav a {
 		display: none;
@@ -711,7 +732,7 @@ form button {
 		margin-top: 50px;
 		display: block;
 		color: #fff;
-		font-size: 25px;
+		font-size: 35px;
 	}
 	nav {
 		width: 100%;
@@ -831,7 +852,7 @@ form button {
 
 	.title__info{
 		padding-left: 20px;
-	
+		
 		display: grid;
 		grid-column: 1 / 3;
 	}
