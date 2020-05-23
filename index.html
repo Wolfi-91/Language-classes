@@ -7,8 +7,9 @@
 	<title>Языковые курсы Delfi Training в Бишкеке</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -23,11 +24,11 @@
 				<nav>
 					<div class="topnav" id="myTopnav">
 						<div class="topnav__col">
-							<div class="first__topnav">
-								<a href="#training_a">Обучение</a>
-								<a href="#">Наша команда</a>
-								<a href="#">Отзывы</a>
-								<a href="#">Котакты</a>
+							<div id="first__topnav">
+								<a href="#training_a" onclick="slowScroll('#training_a')">Обучение</a>
+								<a href="#our__team_a" onclick="slowScroll('#our__team_a')">Наша команда</a>
+								<a href="#feedback_a" onclick="slowScroll('#feedback_a')">Отзывы</a>
+								<a href="#contacts_a" onclick="slowScroll('#contacts_a')">Контакты</a>
 							</div>
 							<div class="topnav__item">
 								<a href="https://api.whatsapp.com/send?phone=996755125035" target="_blank"><img
@@ -45,7 +46,7 @@
 			<div class="header__title">
 				<h1>Работай и учись в Европе!</h1>
 				<p>Подготовим, обучим и отправим в Германию.</p>
-				<button class="header__btn"><a href="">Оставить заявку в Германию</a></button>
+				<button class="header__btn" onclick="show('block')">Оставить заявку в Германию</button>
 			</div>
 		</div>
 	</header>
@@ -70,7 +71,7 @@
 		</section>
 		</div>
 
-		<section class="training mob"><a name="training_a"></a>
+		<section id="training_a" class="training mob">
 			<div class="container">
 				<h2>Обучение</h2>
 				<p>Выберете подходящий для себя курс!</p>
@@ -124,7 +125,7 @@
 			</div>
 		</section>
 
-		<section class="our__team mob">
+		<section id="our__team_a" class="our__team mob">
 			<div class="container">
 				<h2>Наша команда</h2>
 				<div class="team">
@@ -153,7 +154,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="feedback mob">
+		<section id="feedback_a" class="feedback mob">
 			<div class="container">
 				<h2>Отзывы наших учеников</h2>
 				<div class="feedback__box">
@@ -193,7 +194,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacts mob">
+		<section id="contacts_a" class="contacts mob">
 			<div class="container">
 				<div class="contacts__box">
 					<div class="left__item">
@@ -225,7 +226,7 @@
 			</div>
 		</section>
 	</main>
-
+	<!-- Форма 1 -->
 	<div onclick="show('none')" id="gray"></div>
 	<div id="popup">
 		<!-- Картинка крестика -->
@@ -267,10 +268,10 @@
 			<div class="footer__items">
 				<img src="css/assets/image/logo__footer.png" alt="logo" class="footer__logo">
 				<div class="footer__nav">
-					<a href="#training_a">Обучение</a>
-					<a href="#">Наша команда</a>
-					<a href="#">Отзывы</a>
-					<a href="#">Котакты</a>
+					<a href="#training_a" onclick="slowScroll('#training_a')">Обучение</a>
+					<a href="#our__team_a" onclick="slowScroll('#our__team_a')">Наша команда</a>
+					<a href="#feedback_a" onclick="slowScroll('#feedback_a')">Отзывы</a>
+					<a href="#contacts_a" onclick="slowScroll('#contacts_a')">Котакты</a>
 				</div>
 				<div class="con__footer">
 					<p class="foot con__phone">+996 505 125 035</p>
@@ -282,7 +283,7 @@
 		</div>
 	</footer>
 
-	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
 	<script src="script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
